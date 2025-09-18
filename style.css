@@ -348,3 +348,62 @@ nav ul li a:hover::after {
   transition-duration: 0.5s;
 }
 
+
+
+
+ .diferenciais {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .diferenciais h2 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    color: #393f4a;
+    font-weight: normal;
+  }
+
+  .diferenciais h2 span {
+    color: var(--cor-tercearia) /* dourado */
+  }
+
+  .diferenciais-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .diferencial {
+    flex: 1 1 280px;
+    background: #fafaf6;
+    border-radius: 16px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+
+  .diferencial:hover {
+    transform: translateY(-6px);
+  }
+
+  .diferencial i {
+    width: 40px;
+    height: 40px;
+    color: #86756a; /* ícone dourado */
+    margin-bottom: 15px;
+  }
+
+  .diferencial h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #393f4a;
+  }
+
+  .diferencial p {
+    font-size: 0.95rem;
+    color: #6b737b;
+    line-height: 1.4;
+  }

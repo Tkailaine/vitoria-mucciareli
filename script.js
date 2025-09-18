@@ -76,3 +76,7 @@ function animarScroll() {
 
 window.addEventListener('scroll', animarScroll);
 window.addEventListener('load', animarScroll);
+
+
+
+ lucide.createIcons();
