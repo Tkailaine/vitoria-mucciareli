@@ -116,6 +116,11 @@
         
             
     }
+
+
+    i {
+    font-size: 30px;
+   }
     }
 
     
@@ -229,6 +234,10 @@
         text-align: center;
         
     }
+
+     i {
+    font-size: 40px;
+   }
 }
 
 
@@ -243,9 +252,12 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        
             
     }
+
+     i {
+    font-size: 50px;
+   }
     
 }
 
@@ -276,4 +288,8 @@
     #bandeira div p{
         font-size: 1.25em;
     }
+
+    i {
+    font-size: 50px;
+   }
 }

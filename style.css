@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
 :root{
-    --cor-primaria:#e3e6e0 ;
+    --cor-primaria:#F8F8F4 ;
      --cor-secundaria: #7e93ab ; 
      --cor-tercearia: #86756a ; 
     --cor-quartaria: #393f4a;
@@ -20,6 +20,10 @@
 
 }
 
+section{
+  padding: 20px 0;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -30,8 +34,13 @@ body{
     font-family: var(--fonte-padrao);
 }
 
-h1{
+main{
+  background-color: #F8F8F4;
+}
+
+h1,h2,h3{
     font-family: var(--fonte-titulo);
+    
 }
 
 p{
@@ -68,7 +77,10 @@ header figure {
   
 }
 
-
+.centralizar{
+    max-width: 90%;
+    margin: auto;
+}
 
 .btn-whatsapp{
   background: linear-gradient(
@@ -175,7 +187,7 @@ nav ul li a:hover::after {
     rgba(0, 0, 0, 0) 70%      /* some totalmente */
     ),
     url("imagens/hero.jpg");
-    background-position: 30% top;
+    background-position: 25% top;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 0;
@@ -219,9 +231,57 @@ nav ul li a:hover::after {
 
 
 
+#sessao-atuacoes-destaque h2{
+  text-align: center;
+  color: var(--cor-quartaria);
+}
+
+.atuacoes{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+ i {
+    color: var(--cor-secundaria);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.icones{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-secundaria);
+  text-align: center;
+}
+
+
 .logo-branca{
      filter: brightness(0) invert(1);
      
       filter: brightness(0) invert(1) drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+    
+}
+
+
+.decorado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 80px 0;
+}
+
+.decorado::before,
+.decorado::after {
+    content: '';
+    width: 20%;
+    height: 1px;
+    background-color: #D4B673;
+    margin: 0 1rem;
     
 }
