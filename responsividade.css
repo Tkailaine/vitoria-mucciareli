@@ -121,6 +121,64 @@
     i {
     font-size: 30px;
    }
+
+    /*========SOBRE==========*/
+   .container-perfil {
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 2rem; 
+  }
+
+  .coluna-esquerda {
+    align-items: center;
+  }
+
+  .imagem-perfil img {
+    max-width: 280px;
+  }
+
+  .link-voltar {
+    order: -1;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+  }
+
+  .coluna-direita {
+    text-align: left;
+    margin-top: 2rem;
+  }
+
+  .nome {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .linkedin {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .contato,
+  .endereco,
+  .biografia {
+    text-align: left;
+  }
+
+  /* =======ATUAÇÕES =======*/
+
+  .servicos-lista {
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    }
+    .servico-item{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .atuacoes-texto-container {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
     }
 
     
@@ -238,6 +296,62 @@
      i {
     font-size: 40px;
    }
+
+
+    /*========SOBRE==========*/
+   .container-perfil {
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem  2rem;
+  }
+
+  .coluna-esquerda {
+    align-items: center;
+  }
+
+  .imagem-perfil img {
+    max-width: 280px;
+  }
+
+  .link-voltar {
+    order: -1;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+  }
+
+  .coluna-direita {
+    text-align: left;
+    margin-top: 2rem;
+  }
+
+  .nome {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .linkedin {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .contato,
+  .endereco,
+  .biografia {
+    text-align: left;
+  }
+
+
+  /*=====ATUACAO======*/
+  
+  .servicos-lista {
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+
+    .atuacoes-texto-container {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
 }
 
 
@@ -256,10 +370,60 @@
     }
 
      i {
-    font-size: 50px;
+    font-size: 40px;
    }
 
-    
+
+
+   /*========SOBRE==========*/
+   .container-perfil {
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 2rem;
+  }
+
+  .coluna-esquerda {
+    align-items: center;
+  }
+
+  .imagem-perfil img {
+    max-width: 280px;
+  }
+
+  .link-voltar {
+    order: -1;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+  }
+
+  .coluna-direita {
+    text-align: left;
+    margin-top: 2rem;
+  }
+
+  .nome {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .linkedin {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .contato,
+  .endereco,
+  .biografia {
+    text-align: left;
+  }
+
+   /*=====ATUACAO======*/
+   
+  .servicos-lista {
+        grid-template-columns: repeat(auto-fit,minmax(280px,2fr));
+      }
+  
     
 }
 
@@ -291,12 +455,18 @@
         font-size: 1.25em;
     }
 
-    i {
-    font-size: 50px;
+    .icones i {
+    font-size: 40px;
    }
 
    #conteudo-sobre{
     width: 50%;
-
   }
+
+  /*=====ATUACAO======*/
+    .servicos-lista {
+    grid-template-columns: repeat(auto-fit,minmax(280px,2fr));
+    }
+
+  
 }
