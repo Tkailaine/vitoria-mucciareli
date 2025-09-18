@@ -239,6 +239,7 @@ nav ul li a:hover::after {
 .atuacoes{
   display: flex;
   justify-content: space-around;
+  padding-bottom: 50px;
 
 }
 
@@ -285,3 +286,65 @@ nav ul li a:hover::after {
     margin: 0 1rem;
     
 }
+
+.container-sobre{
+  display: flex;
+  
+}
+
+#sobre{
+  color: white;
+  display: flex;
+  background-image: url(imagens/textura.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+#sobre h2{
+  text-transform: uppercase;
+
+}
+
+#conteudo-sobre{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#conteudo-sobre p{
+  text-align: justify;
+}
+
+.nome-adv{
+  display: flex;
+  gap: 0.8rem;
+}
+
+#sobre span{
+  display: block;
+  height: 2px;
+  width: 50%;
+  background-color: #D4B673;
+}
+
+.subtitulo{
+  font-size: 1.25rem;
+}
+
+.btn-clean{
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 25px;
+  color:#ffffff;
+  border:1px solid #ffbb01;
+  cursor: pointer;
+}
+
+.btn-clean:hover{
+  background-color: #d4ab3a;
+  border: 1px solid #d4ab3a;
+  color: white;
+  transition-duration: 0.5s;
+}
+
