@@ -1,0 +1,227 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+:root{
+    --cor-primaria:#e3e6e0 ;
+     --cor-secundaria: #7e93ab ; 
+     --cor-tercearia: #86756a ; 
+    --cor-quartaria: #393f4a;
+
+     --dourado-claro: #f6e3b3;  /* brilho */
+    --dourado-medio: #d4ab3a;  /* cor principal */
+    --dourado-escuro: #b07a18; /* sombra */
+    --borda-dourado: rgba(0,0,0,0.12);
+    --raio-borda: 28px; /* formato "pill" */
+
+    --fonte-padrao: "Lato", "sans-serif";
+    --fonte-titulo: "Gilda Display", "sans-serif"
+
+    
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: var(--fonte-padrao);
+}
+
+h1{
+    font-family: var(--fonte-titulo);
+}
+
+p{
+    line-height: 2em;
+}
+
+header {
+  position: fixed;
+  color: white;
+  padding: 20px 0px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+ 
+
+}
+
+header.scrolled {
+  background-image: linear-gradient(45deg, #e3e6e0 70%, #cdcecb );
+  padding: 15px 0px;
+}
+
+header figure {
+  margin: 0;
+}
+
+#logo {
+  width: 180px;
+  transition: filter 0.3s ease;
+  
+}
+
+
+
+.btn-whatsapp{
+  background: linear-gradient(
+    180deg, 
+    var(--dourado-claro) 0%, 
+    var(--dourado-medio) 50%, 
+    var(--dourado-escuro) 100%
+  );
+  border: 1px solid var(--borda-dourado);
+  box-shadow:
+    0 8px 20px rgba(176,122,24,0.18),       
+    inset 0 1px 0 rgba(255,255,255,0.55);  
+  color: white;
+  padding: 12px 22px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  border: none;
+  max-width: 30%;
+}
+
+
+
+.btn-whatsapp a{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+
+#container-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  
+  border-radius: 2em;
+  padding: 15px 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 10px;
+    align-items: center;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 30px;
+    
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 300;
+  padding-bottom: 4px; 
+  text-transform: uppercase;
+  
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #B49465; 
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  width:30%;
+}
+
+#sessao-bandeira{
+  position: relative;
+  padding-top:0;
+
+}
+
+#bandeira{
+    position: relative;
+    max-width: 100vw;
+    height: 600px;
+   background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.514) 0%,   /* bem escuro no topo */
+    rgba(0, 0, 0, 0.185) 14%,   /* já começa a suavizar */
+    rgba(0, 0, 0, 0.007) 35%,  /* quase transparente */
+    rgba(0, 0, 0, 0) 70%      /* some totalmente */
+    ),
+    url("imagens/hero.jpg");
+    background-position: 30% top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding: 100px 0;
+
+}
+
+#bandeira div{
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+ 
+}
+
+#bandeira h1{
+  font-weight: 400;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
+  
+}
+
+#bandeira div p{
+       text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.349);
+    }
+
+#bandeira button{
+    display: block;
+    cursor: pointer;
+    padding: 0 1rem;
+    min-width: 200px;
+}
+
+#bandeira button a{
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+}
+
+
+
+.logo-branca{
+     filter: brightness(0) invert(1);
+     
+      filter: brightness(0) invert(1) drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+    
+}
