@@ -4,7 +4,7 @@ const header = document.querySelector("header");
 const logo = document.querySelector(".logo")
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) { // quando rolar mais de 50px
+  if (window.scrollY > 80) { // quando rolar mais de 50px
     header.classList.add("scrolled");
     logo.classList.remove("logo-branca");
   } else {
