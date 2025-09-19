@@ -202,7 +202,7 @@
   #sessao-contato{
       flex-direction: column;
       gap: 50px;
-      margin: 80px auto;
+      margin: 80px auto 0;
   }
   #sessao-contato h1{
   font-size: 2em;
@@ -400,7 +400,7 @@
     #sessao-contato{
         flex-direction: column;
         gap: 50px;
-        margin: 80px auto;
+        margin: 80px auto 0;
     }
     #sessao-contato h1{
     font-size: 2em;
@@ -410,6 +410,11 @@
 
  /* Computadores */
 @media (min-width:769px) and (max-width: 1064px) {
+
+  nav a{
+    font-size: 1.1rem;
+  }
+
     /*Bandeira*/
     #bandeira div{
         width: 95%;
@@ -489,7 +494,7 @@
       /* PÁGINA CONTATO */
 
     #sessao-contato{
-        margin: 150px auto;
+        margin: 150px auto 0;
     }
 
     #sessao-contato h1{
@@ -507,6 +512,10 @@
 
 /*Telas grandes*/
 @media (min-width:1065px)  {
+
+  nav a{
+    font-size: 1.3rem;
+  }
     /*Bandeira*/
     
     #bandeira{
@@ -544,7 +553,17 @@
     grid-template-columns: repeat(auto-fit,minmax(280px,2fr));
     }
 
+ #sessao-contato{
+        margin: 150px auto 0;
+    }
 
+    #sessao-contato h1{
+    font-size: 4em;
+    }
+
+    #container-form, #txt-contato{
+    width: 40%;
+    }
     
   
 }
