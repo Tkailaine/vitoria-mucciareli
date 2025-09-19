@@ -648,22 +648,25 @@ padding: 50px 0;
   margin-bottom: 20px;
   font-size: 24px;
   color: var(--cor-quartaria);
+  margin-left: 15px;
 }
 
 .form-contato label {
   display: block;
   margin-bottom: 5px;
+  margin-left: 15px;
   font-weight: bold;
 }
 
 .form-contato input,
 .form-contato textarea {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
+  margin-left: 15px;
 }
 
 .form-contato button {
@@ -673,6 +676,7 @@ padding: 50px 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-left: 15px;
 }
 
 .form-contato button:hover {

@@ -1,17 +1,22 @@
-//Efeito no Header
-
 const header = document.querySelector("header");
-const logo = document.querySelector(".logo")
+const logo = document.querySelector(".logo");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 80) { // quando rolar mais de 50px
+function verificarScroll() {
+  if (window.scrollY > 80) {
     header.classList.add("scrolled");
     logo.classList.remove("logo-branca");
   } else {
     header.classList.remove("scrolled");
-    logo.classList.add("logo-branca")
+    logo.classList.add("logo-branca");
   }
-});
+}
+
+// roda quando a página carrega
+document.addEventListener("DOMContentLoaded", verificarScroll);
+
+// roda quando o usuário rolar
+window.addEventListener("scroll", verificarScroll);
+
 
 //menu mobile
 
