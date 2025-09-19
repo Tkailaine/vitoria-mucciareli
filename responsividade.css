@@ -5,7 +5,12 @@
     /*Header*/
     nav {
     width: 70%;
+    
     }
+    #menu a{
+      color: black;
+    }
+
 
     #menu {
         position: fixed;
@@ -48,7 +53,6 @@
         width: 90%; 
         padding: 10px 0;
         text-align: left; 
-        color: #751e27; 
         text-decoration: none;
         font-weight: 500;
     }
@@ -148,10 +152,22 @@
     margin-top: 2rem;
   }
 
+  .nome-cargo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .nome {
     font-size: 1.5rem;
     text-align: center;
   }
+
+  .cargo{
+  text-align: center;
+}
+
 
   .linkedin {
     display: flex;
@@ -179,6 +195,18 @@
     grid-template-columns: 1fr;
     max-width: 90%;
   }
+
+  
+    /* PÁGINA CONTATO */
+
+  #sessao-contato{
+      flex-direction: column;
+      gap: 50px;
+      margin: 80px auto;
+  }
+  #sessao-contato h1{
+  font-size: 2em;
+  }
     }
 
     
@@ -192,6 +220,10 @@
     /*Header*/
     nav {
         width: 70%;
+    }
+
+     #menu a{
+      color: black;
     }
 
     #menu {
@@ -235,7 +267,6 @@
         width: 90%; 
         padding: 10px 0;
         text-align: left; 
-        color: #751e27; 
         text-decoration: none;
         font-weight: 500;
     }
@@ -324,10 +355,21 @@
     margin-top: 2rem;
   }
 
+  .nome-cargo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .nome {
     font-size: 1.5rem;
     text-align: center;
   }
+
+   .cargo{
+  text-align: center;
+}
 
   .linkedin {
     display: flex;
@@ -352,6 +394,17 @@
     grid-template-columns: 1fr;
     max-width: 90%;
   }
+
+   /* PÁGINA CONTATO */
+ 
+    #sessao-contato{
+        flex-direction: column;
+        gap: 50px;
+        margin: 80px auto;
+    }
+    #sessao-contato h1{
+    font-size: 2em;
+    }
 }
 
 
@@ -403,8 +456,17 @@
 
   .nome {
     font-size: 1.5rem;
-    text-align: center;
+    
   }
+
+  .nome-cargo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
 
   .linkedin {
     display: flex;
@@ -423,6 +485,20 @@
   .servicos-lista {
         grid-template-columns: repeat(auto-fit,minmax(280px,2fr));
       }
+
+      /* PÁGINA CONTATO */
+
+    #sessao-contato{
+        margin: 150px auto;
+    }
+
+    #sessao-contato h1{
+    font-size: 3em;
+    }
+
+    #container-form, #txt-contato{
+    width: 40%;
+    }
   
     
 }
@@ -468,5 +544,7 @@
     grid-template-columns: repeat(auto-fit,minmax(280px,2fr));
     }
 
+
+    
   
 }

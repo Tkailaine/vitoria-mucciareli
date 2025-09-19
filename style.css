@@ -342,6 +342,7 @@ nav ul li a:hover::after {
 
 .subtitulo{
   font-size: 1.25rem;
+  
 }
 
 .btn-clean{
@@ -461,6 +462,7 @@ nav ul li a:hover::after {
   max-width: 350px;
   border-radius: 20px;
   object-fit: cover;
+  margin-top: 5em;
 }
 
 /* Coluna direita */
@@ -472,10 +474,10 @@ nav ul li a:hover::after {
   font-size: 2rem;
   font-weight: normal;
   margin-bottom: 0.3rem;
-  border:1px solid var(--cor-tercearia);
+  
   display: block;
   max-width: 400px;
-  text-align: center;
+  text-align: left;
   border-radius: 25px;
   
 }
@@ -491,7 +493,7 @@ nav ul li a:hover::after {
 
 .contato h2,
 .endereco h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0.3rem;
   margin-top: 1.5rem;
@@ -501,7 +503,8 @@ nav ul li a:hover::after {
 .endereco p,
 .biografia p {
   margin-bottom: 0.8rem;
-  font-size: 0.95rem;
+  text-align: justify;
+ 
 }
 
 
@@ -600,4 +603,74 @@ padding: 50px 0;
   color: #555;
   text-align: justify;
   line-height: 2em;
+}
+
+
+
+/*FORMULÁRIO*/
+
+#sessao-contato{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  text-align: justify;
+  align-items: center;
+  padding: 10em 0;
+}
+
+#sessao-contato p{
+  line-height: 2em;
+}
+
+#sessao-contato h1{
+  color: var(--cor-tercearia);
+  font-weight: 300;
+}
+
+.form-contato {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: sans-serif;
+}
+
+
+
+.form-contato h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--cor-quartaria);
+}
+
+.form-contato label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.form-contato button {
+  background-color:  var(--cor-quartaria);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-contato button:hover {
+  background-color: #d4ab3a;
+  transition-duration: 0.5s;
 }
