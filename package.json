@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "robots-txt": "^1.0.0",
+    "sitemap": "^8.0.0"
+  }
+}
