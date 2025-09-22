@@ -194,9 +194,9 @@ nav ul li a:hover::after {
    background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.514) 0%,   /* bem escuro no topo */
-    rgba(0, 0, 0, 0.185) 14%,   /* já começa a suavizar */
-    rgba(0, 0, 0, 0.007) 35%,  /* quase transparente */
-    rgba(0, 0, 0, 0) 70%      /* some totalmente */
+    rgba(0, 0, 0, 0.404) 14%,   /* já começa a suavizar */
+    rgba(0, 0, 0, 0.425) 35%,  /* quase transparente */
+    rgba(0, 0, 0, 0.274) 70%      /* some totalmente */
     ),
     url("imagens/hero.jpg");
     background-position: 25% top;
